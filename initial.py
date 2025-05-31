@@ -19,9 +19,9 @@ class MyBot:
         self.unknow_command_handlers()  # регистрация обработчика не определенной команды
 
     def handlers(self):
-        @self.dp.message(Command("start"))
-        async def cmd_start(message: Message):
-            await message.answer(f"Тестовый запуск. Ваш id: {message.from_user.id}")
+        # @self.dp.message(Command("start"))
+        # async def cmd_start(message: Message):
+        #     await message.answer(f"Тестовый запуск. Ваш id: {message.from_user.id}")
 
         @self.dp.message(Command("stop"))
         async def cmd_stop(message: Message):
